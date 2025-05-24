@@ -114,7 +114,7 @@ export class Service {
         }
     }
 
-    async deletefile(fileId){
+    async deleteFile(fileId){
         try {
             await this.bucket.deleteFile(
                 conf.appwriteBucketId,
@@ -129,10 +129,10 @@ export class Service {
     }
 
     getFilePreview(fileId){
-        return this.bucket.getFilePreview(
+        return   this.bucket.getFilePreview(
             conf.appwriteBucketId,
             fileId
-        )
+        ).href 
     }
 
 }

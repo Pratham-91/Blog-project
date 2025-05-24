@@ -21,7 +21,7 @@ export default function Protected({children,authentication = true}){
         // let authValue = authStatus === true ? true :false
 
         // TODO: it is a bit complicated , in the end make it more easy 
-        if(authentication && authStatus === "idle"){
+        if(authentication && authStatus !== authentication){
             navigate('/login')
         }else if(!authentication && authStatus !== authentication){
             navigate("/")

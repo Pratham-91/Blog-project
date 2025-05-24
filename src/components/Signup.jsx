@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import authService from '../appwrite/auth'
 import { useNavigate, Link } from 'react-router-dom'
 import { login } from '../store/authSlice'
-import{Button, Input , Logo} from "./index"
+import{Button, Input , Logo} from "./Index"
 import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
 
@@ -59,7 +59,7 @@ function Signup() {
                 })}/>
                 <Input
                 label= "Email:"
-                placeholder= "Enter your meail"
+                placeholder= "Enter your Email"
                 type="email"
                 {...register("email",{
                     required:true,
